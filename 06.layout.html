@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #title{
+            background-color: green;
+            text-align: center;
+            color: blue;
+            padding: 2rem;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+        }
+        /*
+            inherit
+            자신을 감싸고있는 tag에 적용된 stlye을 상속받아서
+            적용하라
+        */
+        a{
+            color:inherit;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            padding: 1.5rem;
+        }
+        address{
+            text-align: center;
+        }
+
+        /*
+            selector를 컴마(,)로 여러개 지정하면
+            공통된 속성을 함꼐 지정할 수 있다.
+        */
+        #ar1,#ar2,#ar3,.arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding:16px;
+        }
+        .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding:16px;
+        }
+
+        /* box 크기를 원래크기(자신을 감싸는 어떤것)의
+            50%만큼 설정하라*/
+        #ar2{
+            width: 50%;
+        }
+
+        /*
+            margin:0 auto
+            margin 값에 top과 bottom을 임의 값으로 설정하고
+            left right는 자동설정하므로해서
+            box를 가운데 정렬하는 효과를 낸다
+        */
+        #ar3{
+            width: 50%;
+            margin: 0 auto;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h3 id="title">Layout 연습</h3>
+    </header>
+    <nav>
+        <a href="https://naver.com">네이버</a>&nbsp;&nbsp;
+        <a href="https://daum.net">다음</a>&nbsp;&nbsp;
+        <a href="https://google.com">구글</a>&nbsp;&nbsp;
+    </nav>
+    <section>
+        <article id="ar1">
+                헌법재판소 재판관의 임기는 6년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 군사재판을 관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다. 모든 국민은 직업선택의 자유를 가진다. 광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다. 모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다. 국가원로자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.
+        </article>
+        <article id="ar2">
+                국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다. 헌법재판소의 조직과 운영 기타 필요한 사항은 법률로 정한다. 법률이 정하는 주요방위산업체에 종사하는 근로자의 단체행동권은 법률이 정하는 바에 의하여 이를 제한하거나 인정하지 아니할 수 있다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다.
+        </article>
+        <article id="ar3">
+                대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다. 대통령은 제1항과 제2항의 처분 또는 명령을 한 때에는 지체없이 국회에 보고하여 그 승인을 얻어야 한다. 대한민국은 통일을 지향하며, 자유민주적 기본질서에 입각한 평화적 통일 정책을 수립하고 이를 추진한다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
+        </article>
+    </section>
+    <footer>
+        <address>CopyRight &copy; yjg9304@naver.com</address>
+    </footer>
+</body>
+</html>
